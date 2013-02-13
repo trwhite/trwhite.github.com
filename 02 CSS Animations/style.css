@@ -184,13 +184,30 @@ to {background: grey;}
 	
 @-webkit-keyframes move {
    0% { -webkit-transform: translate(0,0); }
-   50%  { -webkit-transform: translate(0px,350px); }
+   50%  { -webkit-transform: translate(0px,250px); }
    100% {  -webkit-transform: translate(0,0); }
 }
 	
+/* @-webkit-keyframes rotate {
+	0% { -webkit-transform: rotate(0deg);}	
+	50% { -webkit-transform: rotate(0deg);}
+	100% { -webkit-transform: rotate(360deg);}
+	} 
+*/
+    
 .thumbtack {
 	  -webkit-animation: move 3s linear 1s infinite alternate;
+   /* -webkit-animation: rotate 1s linear 1s infinite alternate; */
 	  }	
+	  
+.paper {
+	position:absolute;
+	width: 300px;
+	height:10px;
+	background-color:yellow;
+	left:300px;
+	top: 590px;
+}
 	
 /* PLUG OUTLET STYLING */
 

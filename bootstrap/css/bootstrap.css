@@ -6043,5 +6043,14 @@ body {
       }
       
 #me {
+	position:relative;
 	border-radius:20px;
+	}
+
+#kardashian {
+	position:absolute;
+	border-radius:20px;
+	left:540px;
+	top: 70px;
+	width:25%;
 	}
