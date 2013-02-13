@@ -74,9 +74,17 @@ html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
 
+
+
+
+
+
+
+
+
 /* START CSS STYLING */
 
-/* iPHONE STYLING */
+	/* iPHONE STYLING */
 
 .box { 
 	position: absolute;
@@ -99,13 +107,24 @@ html[xmlns] .clearfix { display: block; }
 	width:30px; height10px;
 	margin:30px 0px 0px 100px;
 	}
-  	
+	
+	/* iPhone Animation */
+	
+@-webkit-keyframes colorchange
+{
+from {background: white;}
+to {background: grey;}
+}
+	
 .screen {
 	background-color:white;
 	width:225px; height:300px;
 	border-radius: 5px;
 	margin: 65px 20px 20px 13px;
+	-webkit-animation: colorchange 1s linear 1s infinite alternate;
 	}
+	
+	/* End iPhone Animation */
 
 .button {
 	position:absolute;
@@ -162,6 +181,16 @@ html[xmlns] .clearfix { display: block; }
 	border-top: 50px solid grey; 
 	margin: 0px 0px 0px 440px;
 	}
+	
+@-webkit-keyframes move {
+   0% { -webkit-transform: translate(0,0); }
+   50%  { -webkit-transform: translate(0px,350px); }
+   100% {  -webkit-transform: translate(0,0); }
+}
+	
+.thumbtack {
+	  -webkit-animation: move 3s linear 1s infinite alternate;
+	  }	
 	
 /* PLUG OUTLET STYLING */
 
