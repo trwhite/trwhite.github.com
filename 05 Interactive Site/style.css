@@ -1,0 +1,441 @@
+
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:960px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+
+
+
+
+
+
+
+
+/* START CSS STYLING */
+
+body {
+	margin:0 auto;
+	max-width:683px;
+}
+
+a {
+text-decoration:none;
+color:white;
+}
+
+#header-image {
+	position:fixed;
+	z-index:-1000;
+	display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#title {
+	position:relative;
+	float:right;
+	font-family:helvetica;
+	font-weight:bold;
+	font-size:20pt;
+	color:white;
+	z-index:1;
+	text-align:right;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding:20px;
+	border-radius:20px;
+	top:20px;
+	right:20px;
+}
+
+#my-twitter {
+	float:left;
+	color:white;
+	font-size:25px;
+	background-color: #6eb8e1;
+	padding:15px;
+	border-radius:20px;
+	font-weight:bold;
+	margin:250px 0px 0px 15px;
+	font-family:helvetica;
+}
+
+#description {
+	float:left;
+	background-color:#9c948c;
+	margin:19px 0px 0px 0px;
+	width:683px;
+	height:45px;
+	font-family:helvetica;
+	color:white;
+	font-size:12px;
+	text-transform:uppercase;
+	box-shadow: 5px 5px 5px #CCC;
+	z-index:1px;
+	display:table;
+}
+
+#description p {
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center; 
+}
+
+#button-slider {
+	float:left;
+	background-color:#c6bdb5;
+	width:683px;
+	height:210px;
+	z-index:-1000;
+}
+
+#one-image {
+	float:left;
+	border-radius:10px;
+	width:150px;
+	margin:20px 0px 0px 20px;
+	border:4px solid #9c948c;
+}
+
+#sixtyfour {
+	float:left;
+	font-family:helvetica;
+	font-size:50px;
+	color:#635a52;
+	font-weight:bold;
+	margin:15px 0px 0px 10px;
+}
+
+#sixtyfour-text {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	font-size:15px;
+	width:350px;
+	margin:15px 0px 0px 10px;
+}
+
+#fortysix {
+	float:left;
+	font-family:helvetica;
+	font-size:25px;
+	color:#635a52;
+	font-weight:bold;
+	margin:80px 0px 0px -404px;
+}
+
+#fortysix-text {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	font-size:15px;
+	width:350px;
+	margin:22px 0px 0px 10px;
+}
+
+#eighteen {
+	float:left;
+	font-family:helvetica;
+	font-size:25px;
+	color:#635a52;
+	font-weight:bold;
+	margin:50px 0px 0px -404px;
+}
+
+#eighteen-text {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	font-size:15px;
+	width:350px;
+	margin:18px 0px 0px 25px;
+}
+
+#buttons {
+	float:left;
+	background-color:#9c948c;
+	width:683px;
+	height:100px;
+	margin:20px 0px 0px 0px;
+}
+
+#slider-one {
+	float:left;
+	margin:-70px 0px 0px 125px;	
+}
+
+#slider-two {
+	float:left;
+	margin:-70px 0px 0px 320px;	
+}
+
+#slider-three {
+	float:left;
+	margin:-70px 0px 0px 500px;	
+}
+
+#slider-arrow {
+	float:left;
+  	width: 0;
+  	height: 0;
+ 	border-left: 20px solid transparent;
+  	border-right: 20px solid transparent;
+   	border-top: 40px solid #c6bdb5;
+   	margin:-120px 0px 0px 128px; 
+}
+
+#pie-charts {
+	float:left;
+	background-color:#c6bdb5;
+	width:683px;
+	height:500px;
+}
+
+#instructions {
+	float:left;
+	margin:17px 0px 0px 0px;
+	width:683px;
+	height:45px;
+	font-family:helvetica;
+	color:white;
+	font-size:12px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+#to-who {
+	float:left;
+	margin:70px 0px 0px 40px;
+	width:100px;
+	height:26px;
+	font-family:helvetica;
+	color:white;
+	font-size:12px;
+	text-transform:uppercase;
+	background-color:#9c948c;
+	text-align:center;
+	padding:10px;
+	border-radius:10px;
+	line-height:15px;
+
+}
+
+#pie-one {
+	float:left;
+	width:185px;
+	margin:10px 10px 10px 45px;
+}
+
+#pie-two {
+	float:left;
+	width:185px;
+	margin:10px 0px 0px -194px;
+
+}
+
+#pie-three {
+	float:left;
+	width:185px;
+	margin:10px 0px 0px -194px;
+
+}
+
+#check-one {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	margin:20px 10px 40px 125px;
+}
+
+#check-two {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	margin:10px 10px 40px 125px;
+}
+
+#check-three {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	margin:10px 10px 10px 125px;
+}
+
+#checkbox-one {
+	float:left;
+	background-color:#9c948c;
+	width:40px;
+	height:40px;
+	border-radius:10px;
+	margin:-135px 0px 0px -140px;
+}
+
+#checkbox-two {
+	float:left;
+	background-color:#9c948c;
+	width:40px;
+	height:40px;
+	border-radius:10px;
+	margin:-68px 0px 0px -140px;
+}
+
+#checkbox-three {
+	float:left;
+	background-color:#9c948c;
+	width:40px;
+	height:40px;
+	border-radius:10px;
+	margin:0px 0px 0px -140px;
+}
+
+#tweets-hashtags {
+	float:left;
+	width:100px;
+	height:26px;
+	font-family:helvetica;
+	color:white;
+	font-size:12px;
+	text-transform:uppercase;
+	background-color:#9c948c;
+	text-align:center;
+	padding:10px;
+	border-radius:10px;
+	margin:125px 10px 10px -545px;
+	line-height:15px;
+}
+
+#pie-four {
+	float:left;
+	width:185px;
+	margin:75px 10px 10px -380px;
+}
+
+#pie-five {
+	float:left;
+	width:185px;
+	margin:75px 10px 10px -380px;
+}
+
+#checkbox-four {
+	float:left;
+	background-color:#9c948c;
+	width:40px;
+	height:40px;
+	border-radius:10px;
+	margin:-13px 0px -10px -175px;
+}
+
+#checkbox-five {
+	float:left;
+	background-color:#9c948c;
+	width:40px;
+	height:40px;
+	border-radius:10px;
+	margin:-80px 0px -10px -175px;
+
+}
+
+#check-four {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	margin:90px 10px 50px 125px;
+}
+
+#check-five {
+	float:left;
+	color:white;
+	font-family:helvetica;
+	margin:0px 10px 40px 125px;
+}
+
+#footer {
+	float:left;
+	width:683px;
+	height:100px;
+	background-color:#9c948c;
+	color:white;
+	font-family:helvetica;
+	font-size:15px;
+}
+
+#footer-text {
+	padding:10px;
+	text-transform:uppercase;
+}
+
+#twitter-name {
+	float:left;
+	color:#6eb8e1;
+	margin:0px 0px 0px 10px;
+}
