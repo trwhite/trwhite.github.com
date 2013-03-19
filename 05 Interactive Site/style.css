@@ -340,6 +340,10 @@ color:white;
 	margin:-135px 0px 0px -140px;
 }
 
+#checkbox-one:hover {
+	background: #6eb8e1;
+}
+
 #checkbox-two {
 	float:left;
 	background-color:#9c948c;
@@ -349,6 +353,11 @@ color:white;
 	margin:-68px 0px 0px -140px;
 }
 
+#checkbox-two:hover {
+	background: #6eb8e1;
+}
+
+
 #checkbox-three {
 	float:left;
 	background-color:#9c948c;
@@ -356,6 +365,10 @@ color:white;
 	height:40px;
 	border-radius:10px;
 	margin:0px 0px 0px -140px;
+}
+
+#checkbox-three:hover {
+	background: #6eb8e1;
 }
 
 #tweets-hashtags {
@@ -395,6 +408,11 @@ color:white;
 	margin:-13px 0px -10px -175px;
 }
 
+#checkbox-four:hover {
+	background: #6eb8e1;
+}
+
+
 #checkbox-five {
 	float:left;
 	background-color:#9c948c;
@@ -402,8 +420,12 @@ color:white;
 	height:40px;
 	border-radius:10px;
 	margin:-80px 0px -10px -175px;
-
 }
+
+#checkbox-five:hover {
+	background: #6eb8e1;
+}
+
 
 #check-four {
 	float:left;
@@ -439,3 +461,4 @@ color:white;
 	color:#6eb8e1;
 	margin:0px 0px 0px 10px;
 }
+
