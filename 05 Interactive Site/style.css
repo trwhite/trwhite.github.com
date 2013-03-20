@@ -116,6 +116,7 @@ color:white;
 	border-radius:20px;
 	top:20px;
 	right:20px;
+	line-height:32px;
 }
 
 #my-twitter {
@@ -287,27 +288,40 @@ color:white;
 	padding:10px;
 	border-radius:10px;
 	line-height:15px;
-
 }
 
 #pie-one {
 	float:left;
 	width:185px;
 	margin:10px 10px 10px 45px;
+	z-index:1;
+}
+
+#pieone-blue {
+	float:left;
+	width:185px;
+	margin:10px 10px 10px -195px;
+	z-index:200;
 }
 
 #pie-two {
 	float:left;
 	width:185px;
 	margin:10px 0px 0px -194px;
+	z-index:2;
+}
 
+#pietwo-blue {
+	float:left;
+	width:185px;
+	margin:10px 10px 10px -195px;
+	z-index:1;
 }
 
 #pie-three {
 	float:left;
 	width:185px;
 	margin:10px 0px 0px -194px;
-
 }
 
 #check-one {
