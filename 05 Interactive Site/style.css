@@ -311,23 +311,31 @@ color:white;
 	position:relative;
 	width:185px;
 	margin:10px 0px 0px -194px;
-	z-index:0;
+	z-index:100;
 }
 
 #pietwo-blue {
 	float:left;
 	position:relative;
 	width:185px;
-	margin:10px 10px 10px -195px;
+	margin:10px 10px 10px -194px;
 	z-index:0;
 }
 
-#checkbox-one:hover #pie-one { z-index: 3; }
-
 #pie-three {
 	float:left;
+	position:relative;
 	width:185px;
 	margin:10px 0px 0px -194px;
+	z-index:1;
+}
+
+#piethree-blue {
+	float:left;
+	position:relative;
+	width:185px;
+	margin:10px 0px 0px -194px;
+	z-index:0
 }
 
 #check-one {

@@ -5,6 +5,7 @@
 <head>
 	<title>146 Tweets.</title>
 	<link href="style.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src='animation.js'></script>
 </head>
 
@@ -72,6 +73,7 @@
 			<h1><img id="pie-two" src="images/pie-two.png" alt="pie-two"/></h1>
 			<h1><img id="pietwo-blue" src="images/pietwo-blue.png" alt="pietwo-blue"/></h1>
 			<h1><img id="pie-three" src="images/pie-three.png" alt="pie-three"/></h1>
+			<h1><img id="piethree-blue" src="images/piethree-blue.png" alt="piethree-blue"/></h1>
 			<ul>
 				<li id='check-one'>friends/family</li>
 				<li id='check-two'>celebrities</li>
@@ -111,5 +113,13 @@
 <footer id='footer'>
 	<p id='footer-text'>don't forget to follow me..! <div id='twitter-name'>@t0mmywhite</div></p>
 </footer>
+
+<script>
+$("#checkbox-one").hover(function() { 
+   $("#pieone-blue").css("zIndex",100); 
+}, function() { 
+   $("#pieone-blue").css("zIndex",0) 
+});
+</script>
 
 </html>
