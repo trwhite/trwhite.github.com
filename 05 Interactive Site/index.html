@@ -6,7 +6,7 @@
 	<title>146 Tweets.</title>
 	<link href="style.css" rel="stylesheet" media="screen">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src='animation.js'></script>
+	<script src='interactive.js'></script>
 </head>
 
 
@@ -34,15 +34,16 @@
 			<p id='eighteen'>18</p>
 			<p id='eighteen-text'>of them were celebrities.</p>
 		</div>  
-	
-	<!--    
+	   
 		<div id='button-two'>
-			<h1><img id="button-two" src="images/button-two.png" alt="button-two"/></h1>
-			<p>58 of my tweets contained hashtags about the content.</p>
+			<h1><img id="two-image" src="images/button-two.png" alt="button-two"/></h1>
+			<p id="fiftyeight">58</p>
+			<p id="fiftyeight-text">of my tweets contained hashtags about the content.</p>
 		</div>
 	
+	<!--
 		<div id='button-three'>
-			<h1><img id="button-three" src="images/button-three.png" alt="button-three"/></h1>
+			<h1><img id="three-image" src="images/button-three.png" alt="button-three"/></h1>
 			<p>39 of my tweets were either retweeted or favorited by people who follow me.</p>
 		</div>
 	</div>   
@@ -93,7 +94,10 @@
 		<div>
 			<h2 id='tweets-hashtags'>tweets using hashtags</h2>
 			<h1><img id="pie-four" src="images/pie-four.png" alt="pie-four"/></h1>
+			<h1><img id="piefour-blue" src="images/piefour-blue.png" alt="piefour-blue"/></h1>
 			<h1><img id="pie-five" src="images/pie-five.png" alt="pie-five"/></h1>
+			<h1><img id="piefive-blue" src="images/piefive-blue.png" alt="piefive-blue"/></h1>
+
 			<ul>
 				<li id='check-four'>hashtags</li>
 				<li id='check-five'>no hashtags</li>
@@ -119,6 +123,30 @@ $("#checkbox-one").hover(function() {
    $("#pieone-blue").css("zIndex",100); 
 }, function() { 
    $("#pieone-blue").css("zIndex",0) 
+});
+
+$("#checkbox-two").hover(function() { 
+   $("#pietwo-blue").css("zIndex",100); 
+}, function() { 
+   $("#pietwo-blue").css("zIndex",0) 
+});
+
+$("#checkbox-three").hover(function() { 
+   $("#piethree-blue").css("zIndex",100); 
+}, function() { 
+   $("#piethree-blue").css("zIndex",0) 
+});
+
+$("#checkbox-four").hover(function() { 
+   $("#piefour-blue").css("zIndex",100); 
+}, function() { 
+   $("#piefour-blue").css("zIndex",0) 
+});
+
+$("#checkbox-five").hover(function() { 
+   $("#piefive-blue").css("zIndex",100); 
+}, function() { 
+   $("#piefive-blue").css("zIndex",0) 
 });
 </script>
 
