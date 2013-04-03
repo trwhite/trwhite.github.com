@@ -6,7 +6,7 @@
 	<title>146 Tweets.</title>
 	<link href="style.css" rel="stylesheet" media="screen">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src='interactive.js'></script>
+	<script type="text/javascript" scr="interactive.js"></script>
 </head>
 
 
@@ -41,14 +41,12 @@
 			<p id="fiftyeight-text">of my tweets contained hashtags about the content.</p>
 		</div>
 	
-	<!--
 		<div id='button-three'>
 			<h1><img id="three-image" src="images/button-three.png" alt="button-three"/></h1>
-			<p>39 of my tweets were either retweeted or favorited by people who follow me.</p>
+			<p id="thirtynine">39</p> 
+			<p id="thirtynine-text">of my tweets were either retweeted or favorited by people who follow me.</p>
 		</div>
 	</div>   
-	
-	-->
 	
 	<div id='buttons'>
 	</div>
@@ -57,9 +55,6 @@
 		<h1><img id='slider-one' src='images/slider-one.png' alt='slider-one'/></h1>
 		<h1><img id='slider-two' src='images/slider-two.png' alt='slider-two'/></h1>
 		<h1><img id='slider-three' src='images/slider-three.png' alt='slider-three'/></h1>
-	</div>
-	
-	<div id='slider-arrow'>
 	</div>
 	
 	<div id="pie-charts">
@@ -148,6 +143,33 @@ $("#checkbox-five").hover(function() {
 }, function() { 
    $("#piefive-blue").css("zIndex",0) 
 });
+
+
+   // function eventCallback() {
+   //   $("#button-one").fadeOut();
+   // }
+
+    // $("#slider-two").on("click",eventCallback);
+
+
+	$("#slider-one").click(function () {
+		$("#button-one").show("fade");
+		$("#button-two").hide("fade");
+		$("#button-three").hide("fade");
+	});
+	
+		$("#slider-two").click(function () {
+		$("#button-two").show("fade");
+		$("#button-one").hide("fade");
+		$("#button-three").hide("fade");
+	});
+		
+		$("#slider-three").click(function () {
+		$("#button-three").show("fade");
+		$("#button-one").hide("fade");
+		$("#button-two").hide("fade");
+	});
+
 </script>
 
 </html>
