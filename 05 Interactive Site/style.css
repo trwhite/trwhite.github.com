@@ -254,7 +254,7 @@ display:block;
 	font-family:helvetica;
 	font-size:15px;
 	width:350px;
-	margin:-40px 0px 0px 30px;
+	margin:-53px 0px 0px 30px;
 }
 
 #button-two {
@@ -290,7 +290,7 @@ display:block;
 	font-family:helvetica;
 	font-size:15px;
 	width:350px;
-	margin:-40px 0px 0px 30px;
+	margin:-53px 0px 0px 30px;
 }
 
 #button-three {
@@ -305,7 +305,7 @@ display:block;
 	background-color:#9c948c;
 	width:683px;
 	height:100px;
-	margin:20px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
 }
 
 #slider-one {
@@ -561,7 +561,7 @@ display:block;
 #footer {
 	float:left;
 	width:683px;
-	height:100px;
+	height:75px;
 	background-color:#9c948c;
 	color:white;
 	font-family:helvetica;
