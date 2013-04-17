@@ -23,8 +23,8 @@ $(function() {
 	var incidentWidth = fraction * 1000;
 	
 	var maxDomestic = 2840;
-	var fraction = domestic / maxDomestic;
-	var domesticWidth = fraction * 500;
+	var fraction = domestic / maxIncidents;
+	var domesticWidth = fraction * 1000;
 	
 	var row = $("<div>").addClass("row");
 	
