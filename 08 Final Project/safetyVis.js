@@ -18,8 +18,8 @@ $(function() {
 	var x = parseFloat(crime[34]);
 	var y = parseFloat(crime[35]);
 	
-	var lon = (x-235590.68729)/82289.4684947033-71.0694753;
-	var lat = (y-896107.22857)/112165.399589092+42.3140428;
+	var lon = (x-764440.9182)*0.000003501335749 + -71.0968157;
+	var lat = (y-2939425.52)*0.00000295309965022 + 42.310838;
 	
 	console.log(lat);
     console.log(lon);
