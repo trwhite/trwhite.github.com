@@ -37,18 +37,22 @@ $(function() {
     console.log(hospitals.meta);
     console.log(hospitals.data);
 
-	var i = 0;
-	while(i < hospitals.data.length) { 
-	var hospital = hospitals.data[i];
+  var markers = [];
 
-	var lon = parseFloat(hospital[14][2]);
-	var lat = parseFloat(hospital[14][1]);
+    var i = 0;
+    while(i < hospitals.data.length) { 
+      var hospital = hospitals.data[i];
 
-	var marker = new google.maps.Marker({
-    	position: new google.maps.LatLng(lat,lon),
-        title: "MassArt",
-        map: map,
-    })  
+      var lon = parseFloat(hospital[14][2]);
+      var lat = parseFloat(hospital[14][1]);
+
+      var marker = new google.maps.Marker({
+          position: new google.maps.LatLng(lat,lon),
+          title: "MassArt",
+          map: map,
+      });
+
+      markers.push(marker);
     
     var contentString = '<div id="content">'+
     	'<div id="siteNotice">'+
@@ -71,5 +75,15 @@ $(function() {
 	});
     	i++;   
 	}
+	
+	var visible = true;
+     $("#whitebox-one").click(function () {
+         visible = !visible; // this toggles between true and false
+
+         for (var i = 0; i < markers.length; i++ ) {
+          // loop over all the markers and either add them to the map or remove them
+          markers[i].setMap(visible ? map : null);  
+       }
+    });
 });
     
