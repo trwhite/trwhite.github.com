@@ -1,0 +1,96 @@
+#body {
+	width:1000px;
+    margin: 0 auto;
+}
+
+#top-bar {
+	position:relative;
+	float:left;
+	height:150px;
+	width:1000px;
+	background-color:#6B93BA;
+}
+
+#title {
+	float:left;
+	width:200px;
+	margin:-5px 0px 0px 20px;
+}
+
+#divider {
+	float:left;
+	height:116px;
+	width:3px;
+	border-radius:10px;
+	background-color:white;
+	margin:-5px 0px 0px 15px;
+}
+
+#paragraph {
+	float:left;
+	color:white;
+	font-size:.75em;
+	font-family:helvetica;
+	width:300px;
+	margin:0px 0px 0px 15px;
+	line-height:20px;
+}
+
+#whitebox-one {
+	float:left;
+	width:50px;
+	height:50px;
+	border-radius:10px;
+	background-color:white;
+	margin:-5px 0px 0px 200px;
+}
+
+#hospital-loc {
+	float:left;
+	color:white;
+	font-size:em;
+	font-family:helvetica;
+	letter-spacing:1px;
+	margin:10px 0px 0px 15px;
+}
+
+#whitebox-two {
+	float:left;
+	width:50px;
+	height:50px;
+	border-radius:10px;
+	background-color:white;
+	margin:15px 0px 0px 200px;
+
+}
+
+#crime-loc {
+	float:left;
+	color:white;
+	font-size:em;
+	font-family:helvetica;
+	letter-spacing:1px;
+	margin:30px 0px 0px 15px;
+}
+
+#map-canvas {
+	position:relative;
+ 	height:500px; 
+ 	width:1000px;
+ }
+ 
+ #footer {
+	position:relative;
+ 	height:50px;
+	width:1000px;
+	background-color:#6B93BA;
+ }
+ 
+ #footer-text {
+ 	float:left;
+	color:white;
+	font-size:.75em;
+	font-family:helvetica;
+	margin:10px 0px 0px 15px;
+	letter-spacing:1px;
+ }

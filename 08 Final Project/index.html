@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Potholes Map</title>
+	<link href="style.css" rel="stylesheet" media="screen">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="crime.js"></script>
+	<script src="hospital.js"></script>
+	<script src="safetyVis.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHC2Gks7HDPLANSRptlNGPJfGB8KhT778&amp;sensor=false"></script>
+
+</head>
+
+<body id="body">
+	<div id="top-bar">
+		<h1><img id="title" src="Images/title.png" alt="title-logo"/></h1>
+		<div id="divider"></div>
+		<p id="paragraph">This is a visualization combining the location of all the hospitals in Boston 
+			against the location of all the crime incidents by neighborhood. By comparing the 
+			two, we can arguably see the safest places within the city to live. Click the 
+			buttons to see where things are.</p>
+		<div id="whitebox-one"></div>
+		<p id="hospital-loc">Hospital Locations</p>
+		<div id="whitebox-two"></div>
+		<p id="crime-loc">Crime Locations</p>
+	</div>
+	<div id="map-canvas"></div>
+</body>
+
+<footer id="footer">
+	<p id="footer-text">** All data from data.cityofboston.gov.</p>
+</footer>
+
+</html>
