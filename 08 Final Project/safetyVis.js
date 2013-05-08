@@ -24,7 +24,6 @@ $(function() {
 	var marker = new google.maps.Marker({
     	position: new google.maps.LatLng(lat,lon),
         title: "Crime",
-        iconName: "dollar",
         map: map
     });    
 
@@ -37,25 +36,35 @@ $(function() {
     console.log(hospitals.data);
 
   var markers = [];
-
+	
+    
     var i = 0;
     while(i < hospitals.data.length) { 
       var hospital = hospitals.data[i];
 
+      (function(hospital) {
       var lon = parseFloat(hospital[14][2]);
       var lat = parseFloat(hospital[14][1]);
+
+    var hospitalIcon = {url: 'Images/hospital.png',
+    					size: new google.maps.Size(71, 71),
+    					origin: new google.maps.Point(0, 0),
+    					anchor: new google.maps.Point(17, 34),
+    					scaledSize: new google.maps.Size(17, 32)
+    					};
 
       var marker = new google.maps.Marker({
           position: new google.maps.LatLng(lat,lon),
           title: "MassArt",
-          map: map,
+          icon: hospitalIcon,
+          map: map
       });
 
       markers.push(marker);
     
     var contentString = '<div id="content">'+
     	'<div id="siteNotice">'+
-    	'<div id="bodyContent">'+ hospitals.data[15][8] +
+    	'<div id="bodyContent">'+ hospital[8] +
     	'</div>'+
     	'</div>';
     	
@@ -66,6 +75,7 @@ $(function() {
     google.maps.event.addListener(marker,"click",function(){
     infowindow.open(map,marker);
     });
+      }(hospital));
 
     	i++;   
 	}
