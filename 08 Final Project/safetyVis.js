@@ -31,6 +31,8 @@ $(function() {
         map: map
     });    
     
+    
+    
     	i++;   
 	}	
 
@@ -67,12 +69,7 @@ $(function() {
     google.maps.event.addListener(marker,"click",function(){
     infowindow.open(map,marker);
     });
-    
-    
-    $("#whitebox-one").click(function() {
-		$("#MassArt").show("fade");
-		$("#MassArt").hide("fade");
-	});
+
     	i++;   
 	}
 	
@@ -85,5 +82,6 @@ $(function() {
           markers[i].setMap(visible ? map : null);  
        }
     });
+    
 });
     
