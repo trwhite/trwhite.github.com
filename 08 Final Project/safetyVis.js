@@ -7,7 +7,7 @@ $(function() {
     
     var map = new google.maps.Map($("#map-canvas")[0],mapOptions);
       
-
+ 	var crimeMarkers = [];
 	
 	console.log(crimes);
 		
@@ -28,7 +28,7 @@ $(function() {
         map: map
     });    
 
-      // markers.push(marker);
+       crimeMarkers.push(marker);
           
     	i++;   
 	}	
@@ -80,13 +80,13 @@ $(function() {
        }
     });
     
-    var visible = true;
+    var crime = true;
      $("#whitebox-two").click(function () {
-         visible = !visible; // this toggles between true and false
+         crime = !crime; // this toggles between true and false
 
-         for (var i = 0; i < markers.length; i++ ) {
+         for (var i = 0; i < crimeMarkers.length; i++ ) {
           // loop over all the markers and either add them to the map or remove them
-          markers[i].setMap(visible ? map : null);  
+          crimeMarkers[i].setMap(crime ? map : null);  
        }
     });
     
