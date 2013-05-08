@@ -21,18 +21,15 @@ $(function() {
 	var lon = (x-764440.9182)*0.000003501335749 + -71.0968157;
 	var lat = (y-2939425.52)*0.00000295309965022 + 42.310838;
 	
-	console.log(lat);
-    console.log(lon);
-	
 	var marker = new google.maps.Marker({
     	position: new google.maps.LatLng(lat,lon),
         title: "Crime",
-        iconNam: "dollar",
+        iconName: "dollar",
         map: map
     });    
-    
-    
-    
+
+      // markers.push(marker);
+          
     	i++;   
 	}	
 
@@ -75,6 +72,16 @@ $(function() {
 	
 	var visible = true;
      $("#whitebox-one").click(function () {
+         visible = !visible; // this toggles between true and false
+
+         for (var i = 0; i < markers.length; i++ ) {
+          // loop over all the markers and either add them to the map or remove them
+          markers[i].setMap(visible ? map : null);  
+       }
+    });
+    
+    var visible = true;
+     $("#whitebox-two").click(function () {
          visible = !visible; // this toggles between true and false
 
          for (var i = 0; i < markers.length; i++ ) {
